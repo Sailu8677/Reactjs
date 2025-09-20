@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Confirm Method Example</title>
+</head>
+<body>
+  <h1>Confirm Dialog Example</h1>
+  <button id="confirmBtn">Click me</button>
+
+  <script>
+    document.getElementById('confirmBtn').addEventListener('click', function() {
+      const userConfirmed = confirm("Do you want to proceed?");
+      if (userConfirmed) {
+        alert("You clicked OK! Proceeding...");
+      } else {
+        alert("You clicked Cancel. Operation aborted.");
+      }
+    });
+  </script>
+</body>
+</html>
